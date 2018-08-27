@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+
+	</head>
+
+	<body>
+		<div class="login">
+
+			<!--header strat-->
+			<header class="mui-bar mui-bar-nav">
+				<h1 class="mui-title">登录</h1>
+			</header>
+			<!--header end-->
+
+			<!--content strat-->
+			<div class="mui-content">
+				<form id='login-form' class="mui-input-group">
+					<div class="mui-input-row">
+						<label>终端编码：</label>
+						<input id='account' type="text" class="mui-input-clear mui-input" placeholder="输入终端编码">
+					</div>
+					<div class="mui-input-row">
+						<label>密码：</label>
+						<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
+					</div>
+				</form>
+				<form class="mui-input-group">
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							自动登录
+							<div id="autoLogin" class="mui-switch mui-active">
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<div class="mui-content-padded">
+					<button id='login' class="mui-btn mui-btn-block mui-btn-success" data-loading-text="正在登录中..." data-loading-icon="mui-spinner mui-spinner-custom">登录</button>
+					<div class="link-area">
+						<a id='reg' href="pwdedit.html">修改密码</a> <span class="spliter">|</span>
+						<a id='findpwd' href="findpwd.html">忘记密码</a>
+					</div>
+				</div>
+
+			</div>
+			<!--content end-->
+
+		</div>
+
+		<script src="../js/mobile.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			m(function() {
+
+				mui(document.body).on('tap', '.mui-btn', function(e) {
+
+					mui(this).button('loading');
+					setTimeout(function() {
+						mui(this).button('reset');
+					}.bind(this), 2000);
+
+					// 是否自动登录
+					var isActive = m("#autoLogin").hasClass("mui-active");
+					if(isActive) {
+						console.log("打开状态");
+					} else {
+						console.log("关闭状态");
+					}
+				});
+
+				// 修改密码
+				m("#reg").tap(function() {
+
+					// h5 模式		
+					//	window.location.href=m(this).attr("href")||"javacsript";
+					
+					// 原生模式
+					mui.openWindow("pwdedit.html", "pwdedit");
+				
+				});
+				
+				m("#findpwd").tap(function() {
+
+					// h5 模式		
+					//	window.location.href=m(this).attr("href")||"javacsript";
+					
+					// 原生模式
+					mui.openWindow("findpwd.html", "findpwd");
+				
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,82 @@
+/* 登陆页*/
+
+.login {
+    
+    
+    .area {
+        margin: 20rem/$rem auto 0rem/$rem auto;
+    }
+    .mui-input-group {
+        margin-top: 10rem/$rem;
+    }
+    .mui-input-group:first-child {
+        margin-top: 20rem/$rem;
+    }
+    .mui-input-group label {
+        width: 22%;
+    }
+    .mui-input-row label~input,
+    .mui-input-row label~select,
+    .mui-input-row label~textarea {
+        width: 78%;
+    }
+    .mui-checkbox input[type=checkbox],
+    .mui-radio input[type=radio] {
+        top: 6rem/$rem;
+    }
+    .mui-content-padded {
+        margin-top: 25rem/$rem;
+    }
+    .mui-btn {
+        padding: 10rem/$rem;
+    }
+    .link-area {
+        display: block;
+        margin-top: 25rem/$rem;
+        padding-bottom: .7rem;
+        text-align: center;
+    }
+    .spliter {
+        color: #bbb;
+        padding: 0rem/$rem 8rem/$rem;
+    }
+    .oauth-area {
+        position: absolute;
+        bottom: 20rem/$rem;
+        left: 0rem/$rem;
+        text-align: center;
+        width: 100%;
+        padding: 0rem/$rem;
+        margin: 0rem/$rem;
+    }
+    .oauth-area .oauth-btn {
+        display: inline-block;
+        width: 50rem/$rem;
+        height: 50rem/$rem;
+        background-size: 30rem/$rem 30rem/$rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 0rem/$rem 20rem/$rem;
+        /*-webkit-filter: grayscale(100%); */
+        border: solid 1rem/$rem #ddd;
+        border-radius: 25rem/$rem;
+    }
+    .oauth-area .oauth-btn:active {
+        border: solid 1rem/$rem #aaa;
+    }
+    .oauth-area .oauth-btn.disabled {
+        background-color: #ddd;
+    }
+    
+    .mui-input-row{
+        
+        label{
+            width: 35%;
+        }
+        .mui-input{
+            width: 65%;
+        }
+    }
+    
+    
+}

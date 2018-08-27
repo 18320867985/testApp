@@ -1,0 +1,70 @@
+.findpwd {
+    margin-top: 10rem/$rem;
+    .reg-form {
+        padding: 5rem/$rem 10rem/$rem;
+        background: #fff;
+        label {
+            display: block;
+            height: 40rem/$rem;
+            line-height: 40rem/$rem;
+            width: 25%;
+            float: left;
+            padding-left: 10rem/$rem;
+            font-size: 16rem/$rem;
+        }
+        
+        .input-box{
+            position: relative;
+              width: 70%;
+               float: left;
+                 
+           //获取验证码
+          a.req-yzm{
+             position: absolute;
+             top:0;
+             right: -10rem/$rem;
+            display: block;
+            height: 40rem/$rem;
+            line-height: 40rem/$rem;
+            width: 100rem/$rem;
+            text-align: center;
+            font-size: 14rem/$rem;
+           
+            border-left: 1rem/$rem solid #ddd ;
+            color:$default-color;
+            
+            //选择
+              &.mui-active{
+                  color: $positive-color;  
+              }
+           
+          }
+        }
+        input {
+            
+            height: 40rem/$rem;
+            line-height: 40rem/$rem;
+            
+            margin: 0 !important;
+            font-size: 16rem/$rem;
+            border: none;
+        }
+        
+        //横线
+          .mui-row +.mui-row {
+              border-top:1rem/$rem solid #ddd;
+          } 
+          
+        
+       
+        
+          
+    }
+    //按钮
+    .reg-btn {
+       
+       padding:20rem/$rem  10rem/$rem;
+  }
+  
+
+}

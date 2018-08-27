@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>修改密码</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mobile.css" />
+	
+	</head>
+
+	<body>
+		<div class="pwdedit">
+			
+			<!--header strat-->
+			<header class="mui-bar mui-bar-nav">
+				 <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">修改密码</h1>
+			</header>
+			<!--header end-->
+
+			<!--content strat-->
+			<div class="mui-content ">
+				<form id='login-form' class="mui-input-group ">
+					
+					<div class="mui-input-row">
+						<label>原密码：</label>
+						<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入原密码">
+					</div>
+					
+					<div class="mui-input-row">
+						<label>新密码：</label>
+						<input id='password2' type="password" class="mui-input-clear mui-input" placeholder="请输入新密码">
+					</div>
+					
+					<div class="mui-input-row">
+						<label>确认新密码：</label>
+						<input id='password3' type="password" class="mui-input-clear mui-input" placeholder="请再次输入新密码">
+					</div>
+					
+					
+					
+					
+				</form>
+				
+				<div class="mui-content-padded">
+					<button id='login' class="mui-btn mui-btn-block mui-btn-success" data-loading-text="正在提交中..." data-loading-icon="mui-spinner mui-spinner-custom">修改</button>
+					
+				</div>
+				
+				
+				
+			</div>
+			<!--content end-->
+
+		</div>
+
+		<script src="../js/mobile.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			m(function() {
+
+				mui(document.body).on('tap', '.mui-btn', function(e) {
+					
+					mui(this).button('loading');
+					setTimeout(function() {
+						mui(this).button('reset');
+					}.bind(this), 2000);
+
+					
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

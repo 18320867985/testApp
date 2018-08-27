@@ -10,7 +10,7 @@
 	"icons": {
 		"72": "icon.png"
 	},
-	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"launch_path": "pages/login.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
 		"name": "",/*开发者名称*/
 		"email": "",/*开发者邮箱地址*/
@@ -101,9 +101,7 @@
 			"splashscreen": {
 				"ios": {
 					"iphone": {
-						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
-						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
-						"retina40": ""
+						"default": ""
 					},
 					"ipad": {
 						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
@@ -119,11 +117,86 @@
 				"android": {
 					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": ""
+					"hdpi": "unpackage/res/icons/1024x1024.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "unpackage/res/icons/1024x1024.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "unpackage/res/icons/1024x1024.png"
 				}
-			}
+			},"debug":true
 		},"adid":"125531240308"
+	},
+	"dependencies": {
+		"pages": {
+			"pages/login.html": {
+				"resources": [],
+				"refer": [
+					"pages/pwdedit.html",
+					"pages/findpwd.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"images/duizhangdan.jpg",
+				"images/cbd.jpg",
+				"component/aside.html",
+				"images/shuijiao.jpg",
+				"css/font/mui.ttf",
+				"images/slider.png",
+				"component/tab-fixed-top-line.html",
+				"images/index-list-1.png",
+				"images/3.jpg",
+				"images/4.jpg",
+				"component/tab-fixed-top.html",
+				"images/60x60.gif",
+				"component/table-view-collapse.html",
+				"images/index-nangfei).png",
+				"css/mobile.css",
+				"component/tab-fixed-nemu.html",
+				"component/tab-many.html",
+				"css/font/iconfont.css",
+				"images/qrcode.png",
+				"index.html",
+				"images/info.png",
+				"images/2222.png",
+				"component/indexlist.html",
+				"images/index-list-4.png",
+				"component/slide.html",
+				"css/font/mui-icons-extra.ttf",
+				"images/index-lengshi.png",
+				"images/no-img.jpg",
+				"images/muwu.jpg",
+				"images/index-shijing.png",
+				"component/tab-fixed-bottom.html",
+				"js/mobile.js",
+				"images/index-jingxian.png",
+				"component/fullpage.html",
+				"component/scrollTopBottom.html",
+				"images/1111.png",
+				"images/proddtl-desc.png",
+				"images/proddtl.png",
+				"images/3333.png",
+				"images/logo.png",
+				"json/tab.json",
+				"images/login-1.png",
+				"component/table-view.html",
+				"images/index-list-3.png",
+				"images/index-yinger.png",
+				"component/scrollTopBottom-up.html",
+				"images/2.jpg",
+				"images/5.jpg",
+				"component/tab.html",
+				"component/tab-fixed-top-line2.html",
+				"component/test.html",
+				"images/yuantiao.jpg",
+				"images/1.jpg",
+				"images/index-list-2.png",
+				"images/4444.png",
+				"component/overflow.html",
+				"json/topbottom.json",
+				"images/lazy.jpg",
+				"component/scrollLeftRight.html"
+			]
+		}
 	}
 }
